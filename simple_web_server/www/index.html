@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Server - Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+        a {
+            color: #ffe066;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .info-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        ul {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Web Server!</h1>
+        
+        <div class="info-box">
+            <h2>✓ It Works!</h2>
+            <p>Congratulations! Your TCP-based web server is running successfully.</p>
+        </div>
+
+        <h3>What This Demonstrates:</h3>
+        <ul>
+            <li>TCP connection handling</li>
+            <li>HTTP request parsing</li>
+            <li>Serving HTML files</li>
+            <li>Real-world socket programming</li>
+        </ul>
+
+        <h3>Try These Links:</h3>
+        <ul>
+            <li><a href="/">Home Page</a> (you are here)</li>
+            <li><a href="/about.html">About Page</a></li>
+            <li><a href="/contact.html">Contact Page</a></li>
+            <li><a href="/notfound.html">Test 404 Error</a></li>
+        </ul>
+
+        <hr style="margin: 30px 0;">
+        <p style="text-align: center;">
+            <small>Powered by SimpleWebServer/1.0 | Built with Python TCP Sockets</small>
+        </p>
+    </div>
+</body>
+</html>

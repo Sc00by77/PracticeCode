@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Simple Web Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2a5298; }
+        a { color: #2a5298; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #2a5298;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About This Web Server</h1>
+        
+        <h2>How It Works:</h2>
+        <p>This web server is built from scratch using Python's socket library. Here's what happens when you request a page:</p>
+        
+        <ol>
+            <li><strong>TCP Connection:</strong> Your browser establishes a TCP connection (3-way handshake)</li>
+            <li><strong>HTTP Request:</strong> Browser sends GET request for the page</li>
+            <li><strong>Server Processing:</strong> Server reads the file from disk</li>
+            <li><strong>HTTP Response:</strong> Server sends headers and HTML content</li>
+            <li><strong>Connection Close:</strong> TCP connection closes (4-way handshake)</li>
+        </ol>
+
+        <h2>Key Concepts:</h2>
+        <ul>
+            <li>Uses TCP (not UDP) for reliability</li>
+            <li>Implements HTTP/1.1 protocol</li>
+            <li>Handles multiple clients sequentially</li>
+            <li>Serves static HTML files</li>
+        </ul>
+
+        <a href="/" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
